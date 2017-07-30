@@ -1,0 +1,76 @@
+/*
+ Theme Name:   Levels Child
+ Theme URI:    http://levelstheme.com
+ Description:  Additional customizations to Levels.
+ Author:       Gary Bacon
+ Author URI:   http://levelstheme.com
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  levels-child
+*/
+
+.course-contain {
+  width: 80%;
+  min-width: 348px;
+  max-width: 800px;
+  margin: 0 auto;
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 2em;
+          column-gap: 2em;
+  column-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+}
+
+.course {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #97E45D;
+  border-radius: 6px;
+  position: relative;
+  padding: 20px 10px 10px 10px;
+  margin: 10px 0 30px 0;
+}
+
+.course ul {
+  margin: 6px 0 0 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+  font-size: 1em;
+}
+
+.course__heading {
+  margin: -2em 0 0 0;
+  padding: 8px;
+  /* set to the background color */
+  text-shadow:
+   -4px -4px 0 #fff,
+    4px -4px 0 #fff,
+    -4px 4px 0 #fff,
+     4px 4px 0 #fff;
+  color: #24BA3A;
+  font-weight: 600;
+  font-size: 1.5em;
+  display: block;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 700px) {
+  .course-contain {
+    -webkit-column-count: 1;
+            column-count: 1;
+    -webkit-transition: left 0.5s;
+    transition: left 0.5s;
+  }
+}
+
+.header--dark {
+  background-color: #97E45D;
+}
+
+.header--bright {
+  color: #fff;
+}
