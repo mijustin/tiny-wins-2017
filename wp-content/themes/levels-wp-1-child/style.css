@@ -96,4 +96,5 @@
 /* Pseduo class was being a pain so this will def work. */
 .wpcomplete--levels-progress p {
   color: #fff;
+  font-weight: 600;
 }
