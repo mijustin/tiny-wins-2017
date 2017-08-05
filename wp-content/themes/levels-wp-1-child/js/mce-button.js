@@ -3,8 +3,8 @@
 (function() {
 	tinymce.PluginManager.add('levels_child_mce_button', function( editor, url ) {
 		editor.addButton('levels_child_mce_button', {
-			text: 'Levels Child',
-			icon: 'levels-child-icon',
+			text: 'Add Course',
+			icon: 'add-course-icon',
 			onclick: function() {
         editor.focus();
 				editor.selection.setContent('[course]' + editor.selection.getContent() + '[/course]');
