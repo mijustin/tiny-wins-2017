@@ -1,7 +1,9 @@
 <?php
 /**
- * Template Name: Dark Page Header and Top Bar
+ * Template Name: [WP Complete] Dark Page Header and Top Bar
  * @package levels-child
+ *
+ * Note: Must have WPcomplete activated to use this template.
  */
 
 get_header(); ?>

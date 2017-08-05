@@ -13,6 +13,12 @@
 
 	<header class="header header--wp header--centered header--dark">
 		<?php the_title( '<h1 class="header__title header--centered header--bright">', '</h1>' ); ?>
+		<?php
+		/*
+		 	* We're going to render the WPcomplete shortcodes in the header.
+			* The WPcomplete plugin must be activated in order for the shortcodes to render.
+			*/ ?>
+		<p>You've completed <?php echo do_shortcode("[progress_ratio]"); ?> of the tactics so far. <?php echo do_shortcode("[progress_bar]"); ?></p>
 	</header><!-- .entry-header -->
 
 	<div id="inner" class="container--normal">
