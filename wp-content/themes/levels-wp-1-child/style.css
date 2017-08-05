@@ -57,6 +57,9 @@
   display: block;
 }
 
+/* For the Dark Header Page Template */
+.page-template-page-templatespage_dark-header-php #content { margin-top: 55px; }
+
 /* Media Queries */
 
 @media screen and (max-width: 700px) {
