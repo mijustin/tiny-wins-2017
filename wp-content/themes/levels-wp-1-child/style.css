@@ -92,3 +92,8 @@
 .container--small {
   max-width: 370px;
 }
+
+/* Pseduo class was being a pain so this will def work. */
+.wpcomplete--levels-progress p {
+  color: #fff;
+}

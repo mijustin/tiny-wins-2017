@@ -6,7 +6,7 @@ ul ul .wpc-lesson { font-size: .8em; margin-left: 54px; }
 li .wpc-lesson:hover:before { border: 1px solid #24BA3A; }
 ul ul .wpc-lesson:before { left: -22px; }
 li .wpc-lesson-completed:after { content: '✔'; position: absolute; top: 4px; left: -23px; font-size: 1.3em; line-height: 0.8; color: #09ad7e; -webkit-transition: all .2s; transition: all .2s; }
-.wpcomplete-progress-ratio, .wpcomplete-progress-ratio:before, .wpcomplete-progress-ratio:after { color: #ffffff !important; }
+.wpcomplete-progress-ratio, .wpcomplete-progress-ratio::before, .wpcomplete-progress-ratio::after { color: #ffffff !important; font-weight: 600; }
 .wpc-radial-progress, .wpc-bar-progress .wpc-progress-track { background-color: #ffffff; }
 .wpc-bar-progress .wpc-rounded .default-course { padding: 1px; }
 .wpc-progress-track { padding: .25em; }
