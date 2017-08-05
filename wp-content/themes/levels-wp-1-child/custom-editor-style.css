@@ -1,4 +1,4 @@
-.course__heading {
+body#tinymce.wp-editor h3.course__heading {
   margin: -2em 0 0 0;
   padding: 8px;
   /* set to the background color */
