@@ -49,4 +49,10 @@ return $init_array;
 }
 // Attach callback to 'tiny_mce_before_init'
 add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
+
+// Display CSS inside of Visual Editor in the Admin
+function my_theme_add_editor_styles() {
+    add_editor_style( 'custom-editor-style.css' );
+}
+add_action( 'init', 'my_theme_add_editor_styles' );
 ?>
