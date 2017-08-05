@@ -7,7 +7,7 @@
 			icon: false,
 			onclick: function() {
         editor.focus();
-				editor.selection.setContent('[course]' + editor.selection.getContent() + '[/course]';
+				editor.selection.setContent('[course]' + editor.selection.getContent() + '[/course]');
 			}
 		});
 	});
