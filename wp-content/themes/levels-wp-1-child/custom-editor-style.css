@@ -1,6 +1,6 @@
-/*i.mce-i-levels-child-icon {
-	background: transparent url(/wp-content/themes/levels-wp-1-child/img/layout.svg) center left;
-}*/
+i.mce-i-dashicons-layout {
+	content: "\f538";
+}
 
 body#tinymce.wp-editor h3.course__heading {
   color: #24BA3A;
