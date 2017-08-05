@@ -26,7 +26,7 @@ function my_mce_buttons_2( $buttons ) {
  return $buttons;
 }
 // Register our callback to the appropriate filter
-add_filter( 'mce_buttons_1', 'my_mce_buttons_2' );
+add_filter( 'mce_buttons', 'my_mce_buttons_2' );
 
 // Callback function to filter the MCE settings
 function my_mce_before_init_insert_formats( $init_array ) {
