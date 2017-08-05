@@ -18,7 +18,9 @@
 		 	* We're going to render the WPcomplete shortcodes in the header.
 			* The WPcomplete plugin must be activated in order for the shortcodes to render.
 			*/ ?>
-		<p>You've completed <?php echo do_shortcode("[progress_ratio]"); ?> of the tactics so far. <?php echo do_shortcode("[progress_bar]"); ?></p>
+			<div class="container--normal">
+				<p>You've completed <?php echo do_shortcode("[progress_ratio]"); ?> of the tactics so far. <?php echo do_shortcode("[progress_bar]"); ?></p>
+			</div>
 	</header><!-- .entry-header -->
 
 	<div id="inner">
