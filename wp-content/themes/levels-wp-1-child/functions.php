@@ -35,8 +35,8 @@ function levels_child_mce_before_init_insert_formats( $init_array ) {
 $style_formats = array(
 		// Each array child is a format with it's own settings
 		array(
-			'title' => 'Heading3_Course',
-			'block' => 'h3',
+			'title' => 'Heading 3 Course',
+			'selector' => 'h3',
 			'classes' => 'course__heading',
 			'wrapper' => true,
 
