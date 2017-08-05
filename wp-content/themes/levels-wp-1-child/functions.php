@@ -1,4 +1,7 @@
 <?php
+/* Add some delicious shortcodes. */
+include('shortcodes.php');
+
 /* Pull in the parent theme's CSS and enqueue the child theme's CSS. */
 
 function levels_child_enqueue_styles() {
@@ -13,7 +16,4 @@ function levels_child_enqueue_styles() {
     );
 }
 add_action( 'wp_enqueue_scripts', 'levels_child_enqueue_styles' );
-
-/* Add some delicious shortcodes. */
-include('shortcodes.php');
 ?>
