@@ -1,5 +1,6 @@
 i.mce-i-add-course-icon {
 	background: transparent url(/wp-content/themes/levels-wp-1-child/img/icon_course.png) center left;
+  margin-right: 5px;
 }
 
 body#tinymce.wp-editor h3.course__heading {
