@@ -79,3 +79,7 @@
 .header--bright {
   color: #fff;
 }
+
+.container--small {
+  max-width: 370px;
+}
