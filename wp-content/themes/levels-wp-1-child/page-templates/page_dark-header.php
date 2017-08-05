@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Hide Page Header and Top Bar
+ * Template Name: Dark Page Header and Top Bar
  * @package levels-child
  */
 
