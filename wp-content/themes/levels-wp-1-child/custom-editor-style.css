@@ -1,0 +1,14 @@
+.course__heading {
+  margin: -2em 0 0 0;
+  padding: 8px;
+  /* set to the background color */
+  text-shadow:
+   -4px -4px 0 #fff,
+    4px -4px 0 #fff,
+    -4px 4px 0 #fff,
+     4px 4px 0 #fff;
+  color: #24BA3A;
+  font-weight: 600;
+  font-size: 1.5em;
+  display: block;
+}

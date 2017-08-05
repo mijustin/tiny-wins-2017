@@ -39,7 +39,6 @@ $style_formats = array(
    'block' => 'h3',
    'classes' => 'course__heading',
    'wrapper' => true,
-
  ),
 );
 // Insert the array, JSON ENCODED, into 'style_formats'
