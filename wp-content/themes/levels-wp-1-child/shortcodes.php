@@ -6,9 +6,6 @@
    // [course-contain] shortcode
    function shortcode_course_contain( $atts, $content = null ) {
 
-     // prevent additional breaks and paragraphs
-     remove_filter('the_content', 'wpautop', 99);
-
      // create course container
      return
         '<div class="course-contain">' . do_shortcode($content) . '</div>';
@@ -17,9 +14,6 @@
 
    // [course] shortcode
    function shortcode_course( $atts, $content = null ) {
-
-     // prevent additional breaks and paragraphs
-     remove_filter('the_content', 'wpautop', 99);
 
      // create course
      return
