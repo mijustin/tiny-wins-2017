@@ -21,7 +21,7 @@
 		<p>You've completed <?php echo do_shortcode("[progress_ratio]"); ?> of the tactics so far. <?php echo do_shortcode("[progress_bar]"); ?></p>
 	</header><!-- .entry-header -->
 
-	<div id="inner" class="container--normal">
+	<div id="inner">
 
 	<div class="entry-content">
 		<?php
