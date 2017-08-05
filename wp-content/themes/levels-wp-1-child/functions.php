@@ -36,7 +36,7 @@ $style_formats = array(
  // Each array child is a format with it's own settings
  array(
    'title' => 'Heading 3 Course',
-   'block' => 'h3',
+   'block' => 'H3',
    'classes' => 'course__heading',
    'wrapper' => true,
  ),
