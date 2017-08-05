@@ -41,18 +41,6 @@ $style_formats = array(
 			'wrapper' => true,
 
 		),
-		array(
-			'title' => '⇠.rtl',
-			'block' => 'blockquote',
-			'classes' => 'rtl',
-			'wrapper' => true,
-		),
-		array(
-			'title' => '.ltr⇢',
-			'block' => 'blockquote',
-			'classes' => 'ltr',
-			'wrapper' => true,
-		),
 	);
 // Insert the array, JSON ENCODED, into 'style_formats'
   $init_array['style_formats'] = json_encode( $style_formats );
