@@ -7,7 +7,7 @@
    function shortcode_course_contain( $atts, $content = null ) {
 
      // prevent additional breaks and paragraphs
-     remove_filter('the_content', 'my_formatter', 99);
+     remove_filter('the_content', 'wpautop', 99);
 
      // create course container
      return
@@ -19,7 +19,7 @@
    function shortcode_course( $atts, $content = null ) {
 
      // prevent additional breaks and paragraphs
-     remove_filter('the_content', 'my_formatter', 99);
+     remove_filter('the_content', 'wpautop', 99);
 
      // create course
      return
