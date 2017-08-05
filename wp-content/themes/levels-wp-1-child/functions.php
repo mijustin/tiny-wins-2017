@@ -89,4 +89,22 @@ function levels_child_register_mce_button( $buttons ) {
 	return $buttons;
 }
 
+// Remove unwanted paragraphs from shortcodes
+
+add_filter( 'the_content', 'levels_child_shortcode_empty_paragraph_fix' );
+/**
+ * @param string $content  String of HTML content.
+ * @return string $content Amended string of HTML content.
+ */
+function levels_child_shortcode_empty_paragraph_fix( $content ) {
+
+    $array = array(
+        '<p>['    => '[',
+        ']</p>'   => ']',
+        ']<br />' => ']'
+    );
+    return strtr( $content, $array );
+
+}
+
 ?>
