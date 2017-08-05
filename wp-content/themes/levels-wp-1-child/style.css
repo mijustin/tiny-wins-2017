@@ -72,6 +72,9 @@
 }
 
 @media only screen and (max-width: 650px) {
+  body {
+    margin-top: -7px;
+  }
   .container {
       padding: 0;
   }
