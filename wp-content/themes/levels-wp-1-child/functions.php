@@ -78,7 +78,7 @@ function levels_child_add_mce_button() {
 add_action('admin_head', 'levels_child_add_mce_button');
 
 // Declare script for new button
-function my_add_tinymce_plugin( $plugin_array ) {
+function levels_child_add_tinymce_plugin( $plugin_array ) {
 	$plugin_array['levels_child_mce_button'] = get_template_directory_uri() .'/js/mce-button.js';
 	return $plugin_array;
 }
