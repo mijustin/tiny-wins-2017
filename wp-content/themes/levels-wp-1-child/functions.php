@@ -14,10 +14,15 @@ function levels_child_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'levels_child_enqueue_styles' );
 
+
+
+/* SHORTCODES */
 /* Add some delicious shortcodes. */
 include('shortcodes.php');
 
-/* Customize the Visual Editor */
+
+
+/* VISUAL EDITOR CUSTOMIZATIONS */
 // Add WPcomplete custom styling to Visual Editor
 
 // Callback function to insert 'styleselect' into the $buttons array
@@ -50,8 +55,38 @@ $style_formats = array(
 add_filter( 'tiny_mce_before_init', 'levels_child_mce_before_init_insert_formats' );
 
 // Display CSS inside of Visual Editor in the Admin
-function wpdocs_theme_add_editor_styles() {
+function levels_child_theme_add_editor_styles() {
     add_editor_style( 'custom-editor-style.css' );
 }
-add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
+add_action( 'admin_init', 'levels_child_theme_add_editor_styles' );
+
+
+
+/* ADD SHORTCODES TO VISUAL EDITOR */
+// Hooks your functions into the correct filters
+function levels_child_add_mce_button() {
+	// check user permissions
+	if ( !current_user_can( 'edit_posts' ) && !current_user_can( 'edit_pages' ) ) {
+		return;
+	}
+	// check if WYSIWYG is enabled
+	if ( 'true' == get_user_option( 'rich_editing' ) ) {
+		add_filter( 'mce_external_plugins', 'levels_child_add_tinymce_plugin' );
+		add_filter( 'mce_buttons', 'levels_child_register_mce_button' );
+	}
+}
+add_action('admin_head', 'levels_child_add_mce_button');
+
+// Declare script for new button
+function my_add_tinymce_plugin( $plugin_array ) {
+	$plugin_array['my_mce_button'] = get_template_directory_uri() .'/js/mce-button.js';
+	return $plugin_array;
+}
+
+// Register new button in the editor
+function my_register_mce_button( $buttons ) {
+	array_push( $buttons, 'my_mce_button' );
+	return $buttons;
+}
+
 ?>
