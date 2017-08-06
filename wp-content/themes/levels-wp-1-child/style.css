@@ -103,3 +103,8 @@
   font-weight: 600;
   margin: 0 0 14px 0;
 }
+
+i.mce-i-levels-child-icon {
+    background: transparent url(/wp-content/themes/levels-wp-1-child/img/icon_course.png) top left !important;
+  margin-right: 5px;
+}
