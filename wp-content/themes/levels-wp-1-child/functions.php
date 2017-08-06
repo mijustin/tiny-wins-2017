@@ -15,7 +15,7 @@ function levels_child_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'levels_child_enqueue_styles' );
 
 function levels_child_shortcodes_mce_css() {
-	wp_enqueue_style('levels-child-mce-styles', get_template_directory_uri() . '/custom-editor-style.css' );
+	wp_enqueue_style('levels-child-mce-styles', get_stylesheet_directory_uri() . '/custom-editor-style.css' );
 }
 add_action( 'admin_enqueue_scripts', 'levels_child_shortcodes_mce_css' );
 
