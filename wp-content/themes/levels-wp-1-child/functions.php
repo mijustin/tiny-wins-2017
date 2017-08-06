@@ -14,7 +14,10 @@ function levels_child_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'levels_child_enqueue_styles' );
 
-
+function levels_child_shortcodes_mce_css() {
+	wp_enqueue_style('levels-child-mce-styles', plugins_url('/css/my-mce-style.css', __FILE__) );
+}
+add_action( 'admin_enqueue_scripts', 'levels_child_shortcodes_mce_css' );
 
 /* SHORTCODES */
 /* Add some delicious shortcodes. */
