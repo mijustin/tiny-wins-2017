@@ -1,3 +1,7 @@
+i.mce-i-levels-child-icon {
+  background: transparent url(/wp-content/themes/levels-wp-1-child/img/icon_course_pony.png) top left;
+}
+
 body#tinymce.wp-editor h3.course__heading {
   color: #24BA3A;
   font-weight: 600;
