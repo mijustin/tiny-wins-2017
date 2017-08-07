@@ -1,0 +1,6 @@
+body#tinymce.wp-editor h3.course__heading {
+  color: #24BA3A;
+  font-weight: 600;
+  font-size: 1.5em;
+  display: block;
+}
