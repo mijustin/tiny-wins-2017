@@ -23,8 +23,6 @@ add_action( 'admin_enqueue_scripts', 'levels_child_shortcodes_mce_css' );
 /* Add some delicious shortcodes. */
 include('shortcodes.php');
 
-
-
 /* VISUAL EDITOR CUSTOMIZATIONS */
 // Add WPcomplete custom styling to Visual Editor
 
